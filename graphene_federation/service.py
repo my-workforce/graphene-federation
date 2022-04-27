@@ -1,6 +1,7 @@
 import re
 from graphene import ObjectType, String, Field
 from graphene.utils.str_converters import to_camel_case
+from graphql import print_schema
 
 from graphene_federation.extend import extended_types
 from graphene_federation.provides import provides_parent_types

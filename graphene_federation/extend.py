@@ -12,7 +12,7 @@ def extend(fields: str):
             raise RuntimeError("Can't extend type which is already extended or has @key")
         register_entity(Type.__name__, Type)
         register_extend_type(Type.__name__, Type)
-        setattr(Type, '_sdl', '@extends @key(fields: "%s")' % fields)
+        setattr(Type, '_sdl', '@key(fields: "%s")' % fields)
         return Type
     return decorator
 
